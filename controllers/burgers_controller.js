@@ -8,7 +8,7 @@ router.get("/", function(req,res){
 	res.redirect("burgers")
 });
 
-router.get("/burgers", function(req,res){
+router.get("/api/burgers", function(req,res){
 	burgers.selectAll(function(data){
 		var hbsObject = {
 			burgers: data
