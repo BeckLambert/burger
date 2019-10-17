@@ -8,7 +8,7 @@
 	 		 {{#unless this.devoured}}
 	 		 <li class="list-group-item">
 	 		  <div class="input-group">
-	 		  	<p class="lead">{{this.burger_name}}</p>
+	 		  	<p class="lead">{{this.name}}</p>
 	 		  	<span class="input-group-btn">
 
 	 		  		<form action="burgers/update/{{this.id}}?_method=PUT" method="POST">
@@ -34,7 +34,7 @@
 					{{#each burgers}}
 					 {{#if this.devoured}}
 					 <li class="list-group-item">
-					 	<p class="lead">{{this.burger_name}}</p>
+					 	<p class="lead">{{this.name}}</p>
 					 </li>
 					 {{/if}}
 					  {{/each}}
